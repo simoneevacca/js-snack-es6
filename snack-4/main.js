@@ -48,6 +48,7 @@ persone.forEach((element) => {
 console.log(list);
 
 
+
 // const maggiorenne = 'è maggiorenne, può guidare'
 
 // const chi = persone.filter(element =>{
