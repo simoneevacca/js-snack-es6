@@ -3,11 +3,7 @@
 
 
 const insertWord = prompt ('scrivi una parola');
-
 alert (`la parola al contrario è: ${invert(insertWord)}`)
-
-
-
 
 
 
