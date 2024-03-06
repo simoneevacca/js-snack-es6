@@ -54,12 +54,8 @@ const zucchine = [
     },
 ]
 
-const long = zucchine.filter ((zucchina) => {
-    return zucchina.lunghezza >= 15
-})
-const short = zucchine.filter ((zucchina) => {
-    return zucchina.lunghezza < 15
-})
+const long = zucchine.filter (zucchina => zucchina.lunghezza >= 15);
+const short = zucchine.filter (zucchina => zucchina.lunghezza < 15);
 
 console.log(long);
 console.log(short);
