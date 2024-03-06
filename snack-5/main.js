@@ -5,11 +5,11 @@
 const bikes = [
     {
         nome: 'Bianchi',
-        peso: 7
+        peso: 12
     },
     {
         nome: 'Atala',
-        peso: 12
+        peso: 7
     },
     {
         nome: 'Olmo',
@@ -17,9 +17,19 @@ const bikes = [
     },
 ]
 
-const bikeLite = 0;
+let bikeName = 0;
+let bikeWeight = 100; 
 
 const [bici1, bici2, bici3] = bikes
 
-console.log(bici1, bici2, bici3);
 
+
+bikes.forEach ((bike) => {
+    const{nome, peso} = bike
+    if (peso < bikeWeight) {
+        bikeWeight = peso
+        bikeName = nome
+    }
+})
+
+console.log(bikeName, bikeWeight);
