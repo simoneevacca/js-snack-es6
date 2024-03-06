@@ -37,26 +37,15 @@ const persone = [
 
 const list = [];
 
-persone.forEach((element) => {
-    informazioni = `${element.nome} ${element.cognome} ${element.eta}`
+const canDrive = persone.map((element) => {
     if (element.eta < 18){
-        list.push(`${element.nome} ${element.cognome} ${element.eta} non può guidare`)
+        return (`${element.nome} ${element.cognome} ${element.eta} non può guidare`)
     }else {
-        list.push(`${element.nome} ${element.cognome} ${element.eta} può guidare`)
+        return (`${element.nome} ${element.cognome} ${element.eta} può guidare`)
     }
 }) 
-console.log(list);
+console.log(canDrive);
 
 
 
-// const maggiorenne = 'è maggiorenne, può guidare'
 
-// const chi = persone.filter(element =>{
-//     if (element.eta < 18){
-//        return true
-//     } else {
-//         return false
-//     }
-// })
-
-// console.log(chi);
