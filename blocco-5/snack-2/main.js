@@ -59,3 +59,15 @@ const short = zucchine.filter (zucchina => zucchina.lunghezza < 15);
 
 console.log(long);
 console.log(short);
+
+pesoLong = 0
+long.forEach((zucchineLong) => {
+    pesoLong += zucchineLong.peso
+})
+
+pesoShort = 0
+short.forEach((zucchineShort) => {
+    pesoShort += zucchineShort.peso
+})
+
+console.log(pesoLong, pesoShort);
