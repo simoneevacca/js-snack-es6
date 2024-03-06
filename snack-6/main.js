@@ -34,5 +34,4 @@ squadre.forEach ((squadra) =>{
 })
 
 
-
 console.log(result);

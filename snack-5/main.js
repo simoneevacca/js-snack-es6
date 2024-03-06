@@ -4,6 +4,18 @@
 
 const bikes = [
     {
+        nome: 'Casati',
+        peso: 14
+    },
+    {
+        nome: 'Colnago',
+        peso: 1
+    },
+    {
+        nome: 'Bottecchia',
+        peso: 9
+    },
+    {
         nome: 'Bianchi',
         peso: 12
     },
@@ -17,11 +29,8 @@ const bikes = [
     },
 ]
 
-let bikeName = 0;
+let bikeName = bikes.peso;
 let bikeWeight = 100; 
-
-const [bici1, bici2, bici3] = bikes
-
 
 
 bikes.forEach ((bike) => {
@@ -32,4 +41,4 @@ bikes.forEach ((bike) => {
     }
 })
 
-console.log(bikeName, bikeWeight);
+console.log(`la bicicletta che pesa di meno è la ${bikeName} che pesa ${bikeWeight}Kg`);
